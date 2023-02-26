@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public bool lose = false;
     public PlayerController player;
+    public EnemyController greenZombie;
+    public EnemyController grayZombie;
+    public EnemyController ghoul;
 
     // Start is called before the first frame update
     void Start()

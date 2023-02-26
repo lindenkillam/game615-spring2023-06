@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public GameManager gm;
+    public AudioSource playerCollectSound;
     float moveSpeed = 10f;
     float rotateSpeed = 120f;
 
     // Start is called before the first frame update
     void Start() {
-        
+        playerCollectSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour {
         // inspector when you select the obect.
         if (other.CompareTag("medkit")) {
             Destroy(other.gameObject);
+            playerCollectSound.Play();
             gm.playerScore += 1;
         } else if (other.CompareTag("enemy")) {
             gm.lose = true;

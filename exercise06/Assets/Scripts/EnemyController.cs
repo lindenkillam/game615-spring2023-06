@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     NavMeshAgent nma;
+    public GameManager gm;
+    public AudioSource enemyCollectSound;
     float newPositionTimer = 0;
 
     // Start is called before the first frame update
@@ -13,6 +15,7 @@ public class EnemyController : MonoBehaviour
     {
         // Grab the reference to the NavMeshAgent on this gameObject.
         nma = gameObject.GetComponent<NavMeshAgent>();
+        enemyCollectSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,5 +47,22 @@ public class EnemyController : MonoBehaviour
             finalPosition = hit.position;
         }
         return finalPosition;
+    }
+
+    // Unity will tell the function below to run under the following conditions:
+    //  1. Two objects with colliders are colliding
+    //  2. At least one of the objects' colliders are marked as "Is Trigger"
+    //  3. At least one of the objects has a Rigidbody
+    private void OnTriggerEnter(Collider other) {
+        // 'other' is the name of the collider that just collided with the object
+        // that this script ("PlayerController") is attached to. So the if statment
+        // below checks to see that that object has the tag "coin". Remember that
+        // the tags for GameObjects are assigned in the top left area of the
+        // inspector when you select the obect.
+        if (other.CompareTag("medkit")) {
+            Destroy(other.gameObject);
+            enemyCollectSound.Play();
+            gm.enemyScore += 1;
+        }
     }
 }

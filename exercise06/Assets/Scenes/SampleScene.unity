@@ -373,6 +373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrayZombie
       objectReference: {fileID: 0}
+    - target: {fileID: 7401307835578091860, guid: a5c49661878034cf298a2ed9c00e979d, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 992684145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c49661878034cf298a2ed9c00e979d, type: 3}
 --- !u!1 &705507993
@@ -476,6 +480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3017384901341513075, guid: e2b4e79866d3c4547801c06e61f48426, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 992684145}
     - target: {fileID: 7057948361974207940, guid: e2b4e79866d3c4547801c06e61f48426, type: 3}
       propertyPath: m_Name
       value: Ghoul
@@ -726,6 +734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 314170190935660810, guid: a257df817d56b4f7eb5ad2a92b48e6c5, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 992684145}
     - target: {fileID: 2708069883891896332, guid: a257df817d56b4f7eb5ad2a92b48e6c5, type: 3}
       propertyPath: m_Name
       value: GreenZombie

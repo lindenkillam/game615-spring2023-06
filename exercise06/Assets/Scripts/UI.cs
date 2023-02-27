@@ -31,7 +31,10 @@ public class UI : MonoBehaviour
         if(gm.win) //Win condition overrides lose conditions
             winDisplay.text = "You win!";
         else if(gm.lose)
+        {
             winDisplay.text = "You lose...";
+            gm.moveSpeed = 0f;
+        }
 
         playerScoreDisplay.text = "Player score: " + gm.playerScore;
         enemyScoreDisplay.text = "Enemy score: " + gm.enemyScore;

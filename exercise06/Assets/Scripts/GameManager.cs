@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     //(or change to different method of counting medkits)
     public int playerScore = 0;
     public int enemyScore = 0;
+    public float moveSpeed = 10f;
+    public float rotateSpeed = 120f;
     public TMP_Text scoreText;
     public bool win = false;
     public bool lose = false;

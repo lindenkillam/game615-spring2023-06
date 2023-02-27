@@ -6,8 +6,6 @@ public class PlayerController : MonoBehaviour {
 
     public GameManager gm;
     public AudioSource playerCollectSound;
-    float moveSpeed = 10f;
-    float rotateSpeed = 120f;
 
     // Start is called before the first frame update
     void Start() {
@@ -30,11 +28,11 @@ public class PlayerController : MonoBehaviour {
         // be 0.
         // Note that the second parameter to the Translate function is Space.World.
         // For now, just go with this approach.
-        gameObject.transform.Translate(gameObject.transform.forward * Time.deltaTime * moveSpeed * vAxis, Space.World);
+        gameObject.transform.Translate(gameObject.transform.forward * Time.deltaTime * gm.moveSpeed * vAxis, Space.World);
 
         // Do something similar for how much we will rotate on the y axis with
         // the hAxis. 
-        gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime * hAxis, 0);
+        gameObject.transform.Rotate(0, gm.rotateSpeed * Time.deltaTime * hAxis, 0);
     }
 
     // Unity will tell the function below to run under the following conditions:

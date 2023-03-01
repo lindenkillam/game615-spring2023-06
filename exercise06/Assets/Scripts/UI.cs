@@ -20,14 +20,6 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gm.playerScore + gm.enemyScore >= gm.totalMedkits)
-        {
-            if(gm.playerScore > gm.enemyScore)
-                gm.win = true;
-            else
-                gm.lose = true; //Player can also lose by running into a zombie
-        }
-
         if(gm.win) //Win condition overrides lose conditions
             winDisplay.text = "You win!";
         else if(gm.lose)

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8350161134582281910}
   - component: {fileID: 7166272130545935559}
   - component: {fileID: 4484745566235245603}
+  - component: {fileID: 9081762678835839271}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0.00000004214685, z: 0.00000004214685, w: 0.7071068}
   m_LocalPosition: {x: 1.3509998, y: -0.9367001, z: 0.036380053}
   m_LocalScale: {x: 0.38026, y: 0.3802601, z: 0.41182166}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 89
@@ -52,9 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +71,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &4484745566235245603
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -88,10 +95,24 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &9081762678835839271
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857757003333663004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 5.0000024
+  m_Height: 2.9739568e-13
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 0.000000018626451, z: 0.00000035762787}
 --- !u!1 &8108740268367493820
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +124,7 @@ GameObject:
   - component: {fileID: 8106903135380883308}
   - component: {fileID: 8141169446182533094}
   - component: {fileID: 8133360637373011108}
+  - component: {fileID: 7200514022054429994}
   m_Layer: 0
   m_Name: grass (24)
   m_TagString: Untagged
@@ -120,6 +142,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.2061987, y: -2.3414915, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 72
@@ -143,9 +166,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -157,6 +183,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -169,6 +196,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7200514022054429994
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108740268367493820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015665778, z: 0.016974421}
 --- !u!1 &8108746359312636256
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +222,7 @@ GameObject:
   - component: {fileID: 8106832012673663354}
   - component: {fileID: 8140360829905460662}
   - component: {fileID: 8132081160687729658}
+  - component: {fileID: 7255219285141719032}
   m_Layer: 0
   m_Name: grass (9)
   m_TagString: Untagged
@@ -197,6 +240,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.9441986, y: -2.0174913, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 45
@@ -220,9 +264,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -234,6 +281,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -246,6 +294,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7255219285141719032
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108746359312636256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043429434, y: 0.00015665778, z: 0.016974416}
 --- !u!1 &8108755704406515852
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +320,7 @@ GameObject:
   - component: {fileID: 8106639668299284472}
   - component: {fileID: 8139926295568931144}
   - component: {fileID: 8131908903585638730}
+  - component: {fileID: 5239583617258189443}
   m_Layer: 0
   m_Name: brokentombstone4 (1)
   m_TagString: Untagged
@@ -274,6 +338,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.23953669, z: -0, w: 0.9708873}
   m_LocalPosition: {x: 0.85419893, y: -1.5746365, z: -0.033118844}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 13
@@ -297,9 +362,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -311,6 +379,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -323,6 +392,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5239583617258189443
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108755704406515852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2140065
+  m_Height: 0.099992946
+  m_Direction: 1
+  m_Center: {x: 0.004890178, y: -0.002266342, z: 0.25340074}
 --- !u!1 &8108764559869205020
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +418,7 @@ GameObject:
   - component: {fileID: 8106894859203811994}
   - component: {fileID: 8140322262180538066}
   - component: {fileID: 8132021034823105914}
+  - component: {fileID: 616552358350167542}
   m_Layer: 0
   m_Name: grass (31)
   m_TagString: Untagged
@@ -351,6 +436,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.23219872, y: 0.267509, z: 0.042752087}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 85
@@ -374,9 +460,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -388,6 +477,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -400,6 +490,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &616552358350167542
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108764559869205020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.00015701541, z: 0.016974416}
 --- !u!1 &8108765786851305342
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +516,7 @@ GameObject:
   - component: {fileID: 8115212569987396158}
   - component: {fileID: 8140302133914005662}
   - component: {fileID: 8132651472586685162}
+  - component: {fileID: 2128494345829121262}
   m_Layer: 0
   m_Name: grass (13)
   m_TagString: Untagged
@@ -428,6 +534,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.1011987, y: -1.1314913, z: 0.042752147}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 49
@@ -451,9 +558,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -465,6 +575,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -477,6 +588,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2128494345829121262
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108765786851305342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043310225, y: 0.000156777, z: 0.016974417}
 --- !u!1 &8108771574603442244
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +614,7 @@ GameObject:
   - component: {fileID: 8115094442610294600}
   - component: {fileID: 8140439073284774092}
   - component: {fileID: 8132819321000426408}
+  - component: {fileID: 4275448781206835818}
   m_Layer: 0
   m_Name: bone1
   m_TagString: Untagged
@@ -505,6 +632,7 @@ Transform:
   m_LocalRotation: {x: 0.000000029802319, y: -0.00000005765907, z: -0.35539192, w: 0.9347174}
   m_LocalPosition: {x: 0.19919872, y: -1.6504912, z: 0.055881143}
   m_LocalScale: {x: 1.551475, y: 1.5514758, z: 1.551476}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 9
@@ -528,9 +656,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -542,6 +673,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -554,6 +686,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4275448781206835818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108771574603442244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014091394
+  m_Height: 0.0711089
+  m_Direction: 1
+  m_Center: {x: -0.00024244227, y: -0.0009973311, z: 0.0036241289}
 --- !u!1 &8108793394385718510
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +712,7 @@ GameObject:
   - component: {fileID: 8115329271850506148}
   - component: {fileID: 8139960102074590838}
   - component: {fileID: 8132435730329916610}
+  - component: {fileID: 8763289926774472846}
   m_Layer: 0
   m_Name: flower1 (2)
   m_TagString: Untagged
@@ -582,6 +730,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.60519886, y: -1.9724913, z: 0.047797084}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 74
@@ -605,9 +754,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -619,6 +771,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -631,6 +784,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8763289926774472846
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108793394385718510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042949994, z: 0.010438598}
 --- !u!1 &8108806131745111312
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +810,7 @@ GameObject:
   - component: {fileID: 8106756392643299138}
   - component: {fileID: 8140754009224313784}
   - component: {fileID: 8132166103203750416}
+  - component: {fileID: 1767069023730053068}
   m_Layer: 0
   m_Name: grave6
   m_TagString: Untagged
@@ -659,6 +828,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.009, y: 0.571, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 7
@@ -682,9 +852,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -696,6 +869,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -708,6 +882,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1767069023730053068
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108806131745111312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.39610136
+  m_Height: 0.4199868
+  m_Direction: 1
+  m_Center: {x: -0.010951392, y: -0.052295916, z: 0.39610136}
 --- !u!1 &8108847295150272900
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +908,7 @@ GameObject:
   - component: {fileID: 8115252856856018722}
   - component: {fileID: 8140431253103878722}
   - component: {fileID: 8131925703826688954}
+  - component: {fileID: 118318329490645623}
   m_Layer: 0
   m_Name: grass (7)
   m_TagString: Untagged
@@ -736,6 +926,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.06519865, y: -1.6394913, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 43
@@ -759,9 +950,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -773,6 +967,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -785,6 +980,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &118318329490645623
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108847295150272900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.000156777, z: 0.016974416}
 --- !u!1 &8108900024019268126
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +1006,7 @@ GameObject:
   - component: {fileID: 8115178892927639366}
   - component: {fileID: 8140604766908564760}
   - component: {fileID: 8132453778839433854}
+  - component: {fileID: 4695520695761870039}
   m_Layer: 0
   m_Name: flower3 (1)
   m_TagString: Untagged
@@ -813,6 +1024,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.003198618, y: -1.4204915, z: 0.047797084}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 67
@@ -836,9 +1048,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -850,6 +1065,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -862,6 +1078,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4695520695761870039
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108900024019268126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.004295396, z: 0.010438583}
 --- !u!1 &8108913954044241272
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +1104,7 @@ GameObject:
   - component: {fileID: 8106795782839191172}
   - component: {fileID: 8140665521449349918}
   - component: {fileID: 8131881946718633662}
+  - component: {fileID: 4391429439413647767}
   m_Layer: 0
   m_Name: fence (3)
   m_TagString: Untagged
@@ -890,6 +1122,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.000000059604183, z: -0.0055930624, w: -0.99998444}
   m_LocalPosition: {x: 1.1750422, y: -1.7930105, z: 0.1388812}
   m_LocalScale: {x: 0.8122716, y: 0.54179776, z: 0.9178614}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 36
@@ -913,9 +1146,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -927,6 +1163,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -939,6 +1176,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4391429439413647767
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108913954044241272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3082836
+  m_Height: 0.9296044
+  m_Direction: 1
+  m_Center: {x: 0.26296154, y: -0.055919833, z: 0.000000029802326}
 --- !u!1 &8108948961014602584
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +1202,7 @@ GameObject:
   - component: {fileID: 8106936574230359064}
   - component: {fileID: 8140613607959179588}
   - component: {fileID: 8132899932528972278}
+  - component: {fileID: 8504635197189532126}
   m_Layer: 0
   m_Name: flower1 (6)
   m_TagString: Untagged
@@ -967,6 +1220,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: -0.16080141, y: -0.46549112, z: 0.047797054}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 78
@@ -990,9 +1244,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1004,6 +1261,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1016,6 +1274,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8504635197189532126
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108948961014602584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042955955, z: 0.01043859}
 --- !u!1 &8108954410822489524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1300,7 @@ GameObject:
   - component: {fileID: 8115078531287710736}
   - component: {fileID: 8140339365873681434}
   - component: {fileID: 8132628129041117380}
+  - component: {fileID: 3065999842538733178}
   m_Layer: 0
   m_Name: grass (4)
   m_TagString: Untagged
@@ -1044,6 +1318,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.727282, y: -1.7972839, z: 0.041368604}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 22
@@ -1067,9 +1342,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1081,6 +1359,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1093,6 +1372,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3065999842538733178
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108954410822489524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043429434, y: 0.00015674719, z: 0.016974417}
 --- !u!1 &8108956529778750726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1398,7 @@ GameObject:
   - component: {fileID: 8106983005733080262}
   - component: {fileID: 8141121030383173988}
   - component: {fileID: 8131949372381465496}
+  - component: {fileID: 5322621191996322164}
   m_Layer: 0
   m_Name: fence
   m_TagString: Untagged
@@ -1121,6 +1416,7 @@ Transform:
   m_LocalRotation: {x: -0.000000059604638, y: 3.2681047e-10, z: 0.99993986, w: -0.01096594}
   m_LocalPosition: {x: 2.5641985, y: 0.621, z: 0.129}
   m_LocalScale: {x: 0.8122717, y: 0.54179776, z: 0.9178614}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 33
@@ -1144,9 +1440,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1158,6 +1457,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1170,6 +1470,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5322621191996322164
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108956529778750726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30828357
+  m_Height: 0.92960423
+  m_Direction: 1
+  m_Center: {x: 0.26296175, y: -0.05591893, z: 0.000000022351738}
 --- !u!1 &8108962142526649580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1496,7 @@ GameObject:
   - component: {fileID: 8106497795125103686}
   - component: {fileID: 8140378221989368558}
   - component: {fileID: 8131987650180613880}
+  - component: {fileID: 8909822737669726322}
   m_Layer: 0
   m_Name: bone2 (1)
   m_TagString: Untagged
@@ -1198,6 +1514,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.4081988, y: -2.4844913, z: 0.04288125}
   m_LocalScale: {x: 0.81585866, y: 0.81585914, z: 0.81585914}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 71
@@ -1221,9 +1538,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1235,6 +1555,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1247,6 +1568,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8909822737669726322
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108962142526649580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014072783
+  m_Height: 0.10944468
+  m_Direction: 1
+  m_Center: {x: -0.00022407713, y: 0.018170256, z: 0.003624127}
 --- !u!1 &8108964744174874410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1594,7 @@ GameObject:
   - component: {fileID: 8106694292702074492}
   - component: {fileID: 8141357975318918942}
   - component: {fileID: 8131918850701976586}
+  - component: {fileID: 7999231743523855189}
   m_Layer: 0
   m_Name: buried grave2 (3)
   m_TagString: Untagged
@@ -1275,6 +1612,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 0.2521987, y: -1.8366914, z: 0.038881063}
   m_LocalScale: {x: 1.7669065, y: 1.3922005, z: 0.099502556}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 38
@@ -1298,9 +1636,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1312,6 +1653,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1324,6 +1666,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7999231743523855189
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108964744174874410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.0002512969, y: 0.10596406, z: 0.087000445}
 --- !u!1 &8108965229847211854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1692,7 @@ GameObject:
   - component: {fileID: 8106496099364087064}
   - component: {fileID: 8139959943033886346}
   - component: {fileID: 8132864425468923518}
+  - component: {fileID: 7218055896398178203}
   m_Layer: 0
   m_Name: grass (28)
   m_TagString: Untagged
@@ -1352,6 +1710,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: -0.15480137, y: -0.77349126, z: 0.04275191}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 82
@@ -1375,9 +1734,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1389,6 +1751,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1401,6 +1764,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7218055896398178203
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108965229847211854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043727458, y: 0.0001568962, z: 0.016974417}
 --- !u!1 &8108974764046261942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1790,7 @@ GameObject:
   - component: {fileID: 8107006501317257060}
   - component: {fileID: 8141303980133080210}
   - component: {fileID: 8132643975656194816}
+  - component: {fileID: 1228439415406706161}
   m_Layer: 0
   m_Name: grass (8)
   m_TagString: Untagged
@@ -1429,6 +1808,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.5971985, y: -1.6714914, z: 0.04275191}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 44
@@ -1452,9 +1832,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1466,6 +1849,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1478,6 +1862,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1228439415406706161
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108974764046261942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.000156777, z: 0.01697442}
 --- !u!1 &8108998431835247904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1888,7 @@ GameObject:
   - component: {fileID: 8115447081727412958}
   - component: {fileID: 8140595560161594026}
   - component: {fileID: 8133418769424483728}
+  - component: {fileID: 5302237119610849419}
   m_Layer: 0
   m_Name: BigTomb
   m_TagString: Untagged
@@ -1506,6 +1906,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.4199495, y: -0.068399444, z: 0.07151013}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 32
@@ -1529,9 +1930,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1543,6 +1947,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1555,6 +1960,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5302237119610849419
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108998431835247904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.92488873
+  m_Height: 1.5801064
+  m_Direction: 1
+  m_Center: {x: 0.026260346, y: 0.016978862, z: 0.65054786}
 --- !u!1 &8109009793278740868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1986,7 @@ GameObject:
   - component: {fileID: 8115060063740402280}
   - component: {fileID: 8140531968120619020}
   - component: {fileID: 8133430384258035674}
+  - component: {fileID: 1582079000743430050}
   m_Layer: 0
   m_Name: grass (30)
   m_TagString: Untagged
@@ -1583,6 +2004,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: -0.22180128, y: 0.08650875, z: 0.042752013}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 84
@@ -1606,9 +2028,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1620,6 +2045,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1632,6 +2058,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1582079000743430050
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109009793278740868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.00015701541, z: 0.016974417}
 --- !u!1 &8109011381406121056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +2084,7 @@ GameObject:
   - component: {fileID: 8114931652998894178}
   - component: {fileID: 8140422791598115916}
   - component: {fileID: 8131899018119915748}
+  - component: {fileID: 6289359811225263989}
   m_Layer: 0
   m_Name: brokentombstone2
   m_TagString: Untagged
@@ -1660,6 +2102,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 0
@@ -1683,9 +2126,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1697,6 +2143,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1709,6 +2156,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6289359811225263989
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109011381406121056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1465643
+  m_Height: 0.097790524
+  m_Direction: 1
+  m_Center: {x: 0.027200807, y: -0.000000016763808, z: 0.123081595}
 --- !u!1 &8109090009640157404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,6 +2182,7 @@ GameObject:
   - component: {fileID: 8115066834965505328}
   - component: {fileID: 8141310599348704726}
   - component: {fileID: 8132606609518424870}
+  - component: {fileID: 6839121636456517383}
   m_Layer: 0
   m_Name: grave5
   m_TagString: Untagged
@@ -1737,6 +2200,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.0891986, y: -0.9535223, z: -0.048647165}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 17
@@ -1760,9 +2224,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1774,6 +2241,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1786,6 +2254,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6839121636456517383
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109090009640157404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2325184
+  m_Height: 0.41998684
+  m_Direction: 1
+  m_Center: {x: 0.0029822588, y: -0.11237996, z: 0.32166338}
 --- !u!1 &8109091318248621712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,6 +2280,7 @@ GameObject:
   - component: {fileID: 8106524858722328524}
   - component: {fileID: 8141302624373698560}
   - component: {fileID: 8131921535964555400}
+  - component: {fileID: 8242027570716197423}
   m_Layer: 0
   m_Name: grass (21)
   m_TagString: Untagged
@@ -1814,6 +2298,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.501, y: -0.64449126, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 57
@@ -1837,9 +2322,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1851,6 +2339,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1863,6 +2352,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8242027570716197423
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109091318248621712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043429434, y: 0.0001568962, z: 0.016974417}
 --- !u!1 &8109099822059364646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +2378,7 @@ GameObject:
   - component: {fileID: 8114972291912156192}
   - component: {fileID: 8140663055276484102}
   - component: {fileID: 8131815296677473806}
+  - component: {fileID: 8163198485030187560}
   m_Layer: 0
   m_Name: grass (10)
   m_TagString: Untagged
@@ -1891,6 +2396,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.9321985, y: -1.9174914, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 46
@@ -1914,9 +2420,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1928,6 +2437,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1940,6 +2450,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8163198485030187560
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109099822059364646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043421984, y: 0.00015671739, z: 0.01697442}
 --- !u!1 &8109295804433428620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2476,7 @@ GameObject:
   - component: {fileID: 8106760764880177686}
   - component: {fileID: 8140263783185318088}
   - component: {fileID: 8132444996505912864}
+  - component: {fileID: 4083566814042771850}
   m_Layer: 0
   m_Name: buried grave2 (4)
   m_TagString: Untagged
@@ -1968,6 +2494,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 2.1131988, y: -1.8366914, z: 0.038881302}
   m_LocalScale: {x: 1.7669065, y: 1.3922005, z: 0.099502556}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 39
@@ -1991,9 +2518,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2005,6 +2535,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2017,6 +2548,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4083566814042771850
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109295804433428620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.000251133, y: 0.10596412, z: 0.08700046}
 --- !u!1 &8109308487807844776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2574,7 @@ GameObject:
   - component: {fileID: 8106968569014421992}
   - component: {fileID: 8140482654309904198}
   - component: {fileID: 8132658802352460718}
+  - component: {fileID: 1620094691816319828}
   m_Layer: 0
   m_Name: grass (16)
   m_TagString: Untagged
@@ -2045,6 +2592,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.4531989, y: -1.5314913, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 52
@@ -2068,9 +2616,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2082,6 +2633,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2094,6 +2646,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1620094691816319828
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109308487807844776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015672484, z: 0.01697442}
 --- !u!1 &8109317770053508320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2672,7 @@ GameObject:
   - component: {fileID: 8115112595569343198}
   - component: {fileID: 8141314940670876366}
   - component: {fileID: 8132187163963360026}
+  - component: {fileID: 5899276367353486945}
   m_Layer: 0
   m_Name: humanchest
   m_TagString: Untagged
@@ -2122,6 +2690,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.08244037, y: -0.7645854, z: 0.044439495}
   m_LocalScale: {x: 0.673968, y: 0.67396826, z: 0.67396826}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 6
@@ -2145,9 +2714,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2159,6 +2731,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2171,6 +2744,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5899276367353486945
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109317770053508320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09981317
+  m_Height: 0.22343282
+  m_Direction: 1
+  m_Center: {x: -0.00063322106, y: -0.03130288, z: 0.03060373}
 --- !u!1 &8109319906469960092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2770,7 @@ GameObject:
   - component: {fileID: 8106646765296205308}
   - component: {fileID: 8140603970367350740}
   - component: {fileID: 8132169066698508630}
+  - component: {fileID: 2267911450033184274}
   m_Layer: 0
   m_Name: grass (3)
   m_TagString: Untagged
@@ -2199,6 +2788,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.6795368, y: -2.0644665, z: 0.041368723}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 23
@@ -2222,9 +2812,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2236,6 +2829,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2248,6 +2842,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2267911450033184274
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109319906469960092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043414533, y: 0.00015659818, z: 0.01697442}
 --- !u!1 &8109328019193375172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2868,7 @@ GameObject:
   - component: {fileID: 8114962456660037410}
   - component: {fileID: 8139825953302318962}
   - component: {fileID: 8132054914378563308}
+  - component: {fileID: 5745168681425753320}
   m_Layer: 0
   m_Name: bone1 (1)
   m_TagString: Untagged
@@ -2276,6 +2886,7 @@ Transform:
   m_LocalRotation: {x: 0.4027548, y: -0.12978229, z: -0.22462752, w: 0.87777424}
   m_LocalPosition: {x: 0.30296302, y: -1.6880491, z: 0.059096932}
   m_LocalScale: {x: 1.5514748, y: 1.5514752, z: 1.5514749}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 40
@@ -2299,9 +2910,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2313,6 +2927,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2325,6 +2940,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5745168681425753320
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109328019193375172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014091388
+  m_Height: 0.07110891
+  m_Direction: 1
+  m_Center: {x: -0.00024262082, y: -0.0009973013, z: 0.0036242392}
 --- !u!1 &8109333810468527574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2966,7 @@ GameObject:
   - component: {fileID: 8114970634460036164}
   - component: {fileID: 8140455613715770718}
   - component: {fileID: 8132046491686958582}
+  - component: {fileID: 8683221698674544127}
   m_Layer: 0
   m_Name: flower1 (3)
   m_TagString: Untagged
@@ -2353,6 +2984,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.3311987, y: -1.2294912, z: 0.047797084}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 75
@@ -2376,9 +3008,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2390,6 +3025,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2402,6 +3038,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8683221698674544127
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109333810468527574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042953272, z: 0.010438583}
 --- !u!1 &8109347774140374748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,6 +3064,7 @@ GameObject:
   - component: {fileID: 8115061801806444862}
   - component: {fileID: 8139914417279943170}
   - component: {fileID: 8132891747409709994}
+  - component: {fileID: 6497669194391031632}
   m_Layer: 0
   m_Name: flower2 (8)
   m_TagString: Untagged
@@ -2430,6 +3082,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.33719873, y: -0.49449116, z: 0.047797114}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 66
@@ -2453,9 +3106,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2467,6 +3123,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2479,6 +3136,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6497669194391031632
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109347774140374748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042955955, z: 0.010438583}
 --- !u!1 &8109359069014773970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,6 +3162,7 @@ GameObject:
   - component: {fileID: 8106703790223730312}
   - component: {fileID: 8140283939840735512}
   - component: {fileID: 8132566329585028996}
+  - component: {fileID: 836191466323745210}
   m_Layer: 0
   m_Name: grass (6)
   m_TagString: Untagged
@@ -2507,6 +3180,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.45819855, y: -1.8314912, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 42
@@ -2530,9 +3204,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2544,6 +3221,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2556,6 +3234,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &836191466323745210
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109359069014773970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.00015671739, z: 0.01697442}
 --- !u!1 &8109421762194447154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,6 +3260,7 @@ GameObject:
   - component: {fileID: 8106610993022577900}
   - component: {fileID: 8140330527890734902}
   - component: {fileID: 8132447408899231336}
+  - component: {fileID: 18349627382825987}
   m_Layer: 0
   m_Name: brokentombstone3
   m_TagString: Untagged
@@ -2584,6 +3278,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.21579862, y: -1.5319808, z: 0.01988113}
   m_LocalScale: {x: 0.83, y: 0.83000046, z: 0.83000046}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 11
@@ -2607,9 +3302,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2621,6 +3319,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2633,6 +3332,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &18349627382825987
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109421762194447154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17704168
+  m_Height: 0.06276398
+  m_Direction: 1
+  m_Center: {x: 0.021625273, y: -0.00000029988587, z: 0.15987949}
 --- !u!1 &8109447451446589348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,6 +3358,7 @@ GameObject:
   - component: {fileID: 8106645832777138010}
   - component: {fileID: 8140747153742900884}
   - component: {fileID: 8132054131594397752}
+  - component: {fileID: 1372356832398438265}
   m_Layer: 0
   m_Name: grass (1)
   m_TagString: Untagged
@@ -2661,6 +3376,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.1127019, y: -1.5952075, z: 0.041368484}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 25
@@ -2684,9 +3400,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2698,6 +3417,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2710,6 +3430,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1372356832398438265
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109447451446589348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015668759, z: 0.01697442}
 --- !u!1 &8109454018986408772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +3456,7 @@ GameObject:
   - component: {fileID: 8115467953652390038}
   - component: {fileID: 8140463787988543036}
   - component: {fileID: 8132641469857884828}
+  - component: {fileID: 1116409253393357525}
   m_Layer: 0
   m_Name: sjull
   m_TagString: Untagged
@@ -2738,6 +3474,7 @@ Transform:
   m_LocalRotation: {x: 0.25925434, y: 0.13922757, z: -0.45217285, w: -0.84198725}
   m_LocalPosition: {x: 0.8303404, y: -1.7748873, z: 0.04288125}
   m_LocalScale: {x: 0.85168, y: 0.8516798, z: 0.85168}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 8
@@ -2761,9 +3498,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2775,6 +3515,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2787,6 +3528,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1116409253393357525
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109454018986408772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06358231
+  m_Height: 0.11926064
+  m_Direction: 1
+  m_Center: {x: -0.0000003618287, y: -0.0039893626, z: 0.034452517}
 --- !u!1 &8109457319779584426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,6 +3554,7 @@ GameObject:
   - component: {fileID: 8107003141885134168}
   - component: {fileID: 8140466149494135638}
   - component: {fileID: 8132694036055020292}
+  - component: {fileID: 4558350110894625119}
   m_Layer: 0
   m_Name: coffin
   m_TagString: Untagged
@@ -2815,6 +3572,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.368784, y: -2.440942, z: 0.03688121}
   m_LocalScale: {x: 0.490906, y: 0.49090624, z: 0.49090624}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 5
@@ -2838,9 +3596,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2852,6 +3613,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2864,6 +3626,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4558350110894625119
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109457319779584426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20294884
+  m_Height: 0.8031387
+  m_Direction: 1
+  m_Center: {x: -0.00000023841858, y: -0.00000071525574, z: 0.060781013}
 --- !u!1 &8109465716352651380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,6 +3652,7 @@ GameObject:
   - component: {fileID: 8114939499419258058}
   - component: {fileID: 8140699773015642762}
   - component: {fileID: 8132820286834551008}
+  - component: {fileID: 6235525482143371295}
   m_Layer: 0
   m_Name: flower3
   m_TagString: Untagged
@@ -2892,6 +3670,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.5151892, y: -2.0910149, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 20
@@ -2915,9 +3694,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2929,6 +3711,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2941,6 +3724,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6235525482143371295
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109465716352651380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.004295357, z: 0.010438583}
 --- !u!1 &8109479462480482544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +3750,7 @@ GameObject:
   - component: {fileID: 8115272827563071360}
   - component: {fileID: 8140659070920199114}
   - component: {fileID: 8132461814977003516}
+  - component: {fileID: 206324115564879982}
   m_Layer: 0
   m_Name: grass (25)
   m_TagString: Untagged
@@ -2969,6 +3768,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.73319864, y: -2.2034914, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 79
@@ -2992,9 +3792,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3006,6 +3809,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3018,6 +3822,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &206324115564879982
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109479462480482544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015653858, z: 0.016974414}
 --- !u!1 &8109485249360376590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3029,6 +3848,7 @@ GameObject:
   - component: {fileID: 8115033670662522960}
   - component: {fileID: 8140377579366728964}
   - component: {fileID: 8132508609871699380}
+  - component: {fileID: 2081542968599810316}
   m_Layer: 0
   m_Name: grass (29)
   m_TagString: Untagged
@@ -3046,6 +3866,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.3311987, y: -0.81649125, z: 0.042751968}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 83
@@ -3069,9 +3890,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3083,6 +3907,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3095,6 +3920,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2081542968599810316
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109485249360376590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.0001568366, z: 0.016974417}
 --- !u!1 &8109504562632946098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,6 +3946,7 @@ GameObject:
   - component: {fileID: 8115248912457987444}
   - component: {fileID: 8140528456130640132}
   - component: {fileID: 8132494952994678774}
+  - component: {fileID: 7085999924126275630}
   m_Layer: 0
   m_Name: grass (26)
   m_TagString: Untagged
@@ -3123,6 +3964,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.0471988, y: -2.4144914, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 80
@@ -3146,9 +3988,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3160,6 +4005,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3172,6 +4018,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7085999924126275630
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109504562632946098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015665778, z: 0.016974421}
 --- !u!1 &8109505157617292152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +4044,7 @@ GameObject:
   - component: {fileID: 8106786814108413726}
   - component: {fileID: 8140665066151491502}
   - component: {fileID: 8132656976544917966}
+  - component: {fileID: 3707851014106056172}
   m_Layer: 0
   m_Name: buried grave2
   m_TagString: Untagged
@@ -3200,6 +4062,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 1.4150882, y: -1.8164914, z: 0.04049778}
   m_LocalScale: {x: 1, y: 1, z: 0.32440838}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 31
@@ -3223,9 +4086,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3237,6 +4103,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3249,6 +4116,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3707851014106056172
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109505157617292152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.0002511777, y: 0.10596418, z: 0.08700038}
 --- !u!1 &8109512372166084864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,6 +4142,7 @@ GameObject:
   - component: {fileID: 8106941868064160642}
   - component: {fileID: 8139698114386417770}
   - component: {fileID: 8133400883893591698}
+  - component: {fileID: 1310977919968838273}
   m_Layer: 0
   m_Name: grass (11)
   m_TagString: Untagged
@@ -3277,6 +4160,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.2961988, y: -1.8844914, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 47
@@ -3300,9 +4184,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3314,6 +4201,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3326,6 +4214,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1310977919968838273
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109512372166084864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043340027, y: 0.00015671739, z: 0.016974417}
 --- !u!1 &8109527090724547048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,6 +4255,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0.00000004214685, z: -0.00000004214685, w: 0.7071068}
   m_LocalPosition: {x: 6.109, y: 0.90362, z: -1.7687}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8114931652998894178}
   - {fileID: 8106913606302487360}
@@ -3457,6 +4361,7 @@ GameObject:
   - component: {fileID: 8115258983234252976}
   - component: {fileID: 8140585599628192286}
   - component: {fileID: 8132868072795684160}
+  - component: {fileID: 5459572828928945173}
   m_Layer: 0
   m_Name: grass (15)
   m_TagString: Untagged
@@ -3474,6 +4379,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.43219852, y: -1.9674914, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 51
@@ -3497,9 +4403,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3511,6 +4420,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3523,6 +4433,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5459572828928945173
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109530970815454366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015665778, z: 0.016974417}
 --- !u!1 &8109533251797625042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,6 +4459,7 @@ GameObject:
   - component: {fileID: 8106678528485394460}
   - component: {fileID: 8141240170505044018}
   - component: {fileID: 8132785717226721488}
+  - component: {fileID: 350957922893485355}
   m_Layer: 0
   m_Name: flower2 (3)
   m_TagString: Untagged
@@ -3551,6 +4477,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.479199, y: -1.6114914, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 61
@@ -3574,9 +4501,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3588,6 +4518,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3600,6 +4531,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &350957922893485355
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109533251797625042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030181701, y: 0.004295238, z: 0.010438583}
 --- !u!1 &8109533748627168514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,6 +4557,7 @@ GameObject:
   - component: {fileID: 8106985186752738644}
   - component: {fileID: 8140292259933155594}
   - component: {fileID: 8133395957687314016}
+  - component: {fileID: 7970668507018732255}
   m_Layer: 0
   m_Name: flower1 (5)
   m_TagString: Untagged
@@ -3628,6 +4575,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.1551986, y: -2.2004914, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 77
@@ -3651,9 +4599,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3665,6 +4616,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3677,6 +4629,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7970668507018732255
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109533748627168514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.004294761, z: 0.010438583}
 --- !u!1 &8109544708916564144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +4655,7 @@ GameObject:
   - component: {fileID: 8115473456739385124}
   - component: {fileID: 8140485294255634044}
   - component: {fileID: 8131849948534929596}
+  - component: {fileID: 5865218809188430616}
   m_Layer: 0
   m_Name: grass (12)
   m_TagString: Untagged
@@ -3705,6 +4673,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.045199, y: -2.0314913, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 48
@@ -3728,9 +4697,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3742,6 +4714,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3754,6 +4727,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5865218809188430616
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109544708916564144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043280423, y: 0.00015665778, z: 0.01697442}
 --- !u!1 &8109556813729286852
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,6 +4753,7 @@ GameObject:
   - component: {fileID: 8115319139851980738}
   - component: {fileID: 8141167418790823548}
   - component: {fileID: 8132397579721311588}
+  - component: {fileID: 7454246662019457058}
   m_Layer: 0
   m_Name: grass (2)
   m_TagString: Untagged
@@ -3782,6 +4771,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.35005, y: -2.0709314, z: 0.041368723}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 24
@@ -3805,9 +4795,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3819,6 +4812,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3831,6 +4825,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7454246662019457058
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109556813729286852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015671739, z: 0.016974417}
 --- !u!1 &8109569357394343716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +4851,7 @@ GameObject:
   - component: {fileID: 8106696143546441424}
   - component: {fileID: 8139910484157287546}
   - component: {fileID: 8132628641304771060}
+  - component: {fileID: 8849301181951292448}
   m_Layer: 0
   m_Name: buried grave2 (5)
   m_TagString: Untagged
@@ -3859,6 +4869,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 0.08219861, y: -1.0764912, z: 0.038881183}
   m_LocalScale: {x: 1.7669065, y: 1.3922005, z: 0.099502556}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 69
@@ -3882,9 +4893,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3896,6 +4910,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3908,6 +4923,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8849301181951292448
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109569357394343716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.0002512969, y: 0.10596418, z: 0.08700043}
 --- !u!1 &8109585040982535556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,6 +4949,7 @@ GameObject:
   - component: {fileID: 8106806696562780598}
   - component: {fileID: 8140323470409186600}
   - component: {fileID: 8132723430235000848}
+  - component: {fileID: 230796793810889109}
   m_Layer: 0
   m_Name: grave4
   m_TagString: Untagged
@@ -3936,6 +4967,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.55907774, y: -0.94149125, z: -0.048647165}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 28
@@ -3959,9 +4991,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3973,6 +5008,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3985,6 +5021,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &230796793810889109
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109585040982535556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.16907321
+  m_Height: 0.41998684
+  m_Direction: 1
+  m_Center: {x: 0.002982378, y: -0.11237993, z: 0.18456617}
 --- !u!1 &8109592857830022872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,6 +5047,7 @@ GameObject:
   - component: {fileID: 8115156977804866948}
   - component: {fileID: 8139725852538116624}
   - component: {fileID: 8133492942099960168}
+  - component: {fileID: 1885079552619424915}
   m_Layer: 0
   m_Name: grass (5)
   m_TagString: Untagged
@@ -4013,6 +5065,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.7442, y: -1.9775, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 41
@@ -4036,9 +5089,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4050,6 +5106,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4062,6 +5119,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1885079552619424915
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109592857830022872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015665778, z: 0.016974421}
 --- !u!1 &8109595999316346118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4073,6 +5145,7 @@ GameObject:
   - component: {fileID: 8106504506724291772}
   - component: {fileID: 8139781068806933252}
   - component: {fileID: 8132385507018156546}
+  - component: {fileID: 8445903023749290878}
   m_Layer: 0
   m_Name: brokentombstone1
   m_TagString: Untagged
@@ -4090,6 +5163,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.0931988, y: -1.594374, z: 0.016881347}
   m_LocalScale: {x: 0.88, y: 0.8800005, z: 0.8800005}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 12
@@ -4113,9 +5187,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4127,6 +5204,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4139,6 +5217,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8445903023749290878
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109595999316346118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17157288
+  m_Height: 0.06792144
+  m_Direction: 1
+  m_Center: {x: 0.0122513175, y: -0.00000032782555, z: 0.12759097}
 --- !u!1 &8109596735016676178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,6 +5243,7 @@ GameObject:
   - component: {fileID: 8114983981883272414}
   - component: {fileID: 8139923626982190242}
   - component: {fileID: 8132698536177932748}
+  - component: {fileID: 7880574953709047315}
   m_Layer: 0
   m_Name: grass
   m_TagString: Untagged
@@ -4167,6 +5261,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.1216455, y: -2.0530865, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 26
@@ -4190,9 +5285,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4204,6 +5302,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4216,6 +5315,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7880574953709047315
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109596735016676178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043429434, y: 0.00015665778, z: 0.016974417}
 --- !u!1 &8109602647306641038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,6 +5341,7 @@ GameObject:
   - component: {fileID: 8106843364029714040}
   - component: {fileID: 8139726906010820778}
   - component: {fileID: 8132570417249894452}
+  - component: {fileID: 6972322501084385308}
   m_Layer: 0
   m_Name: grass (33)
   m_TagString: Untagged
@@ -4244,6 +5359,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.7671986, y: -2.3264914, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 87
@@ -4267,9 +5383,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4281,6 +5400,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4293,6 +5413,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6972322501084385308
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109602647306641038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043340027, y: 0.00015659818, z: 0.01697442}
 --- !u!1 &8109606412588997910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +5439,7 @@ GameObject:
   - component: {fileID: 8106913606302487360}
   - component: {fileID: 8140788027149443674}
   - component: {fileID: 8132033978952967184}
+  - component: {fileID: 6785792142584839628}
   m_Layer: 0
   m_Name: bone2
   m_TagString: Untagged
@@ -4321,6 +5457,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.3821988, y: -2.4887912, z: 0.04288125}
   m_LocalScale: {x: 0.81585866, y: 0.81585914, z: 0.81585914}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 1
@@ -4344,9 +5481,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4358,6 +5498,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4370,6 +5511,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6785792142584839628
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109606412588997910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014072783
+  m_Height: 0.10944468
+  m_Direction: 1
+  m_Center: {x: -0.00022395792, y: 0.018170137, z: 0.0036241307}
 --- !u!1 &8109607292997164738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,6 +5537,7 @@ GameObject:
   - component: {fileID: 8115339804908419442}
   - component: {fileID: 8139834185966462424}
   - component: {fileID: 8132781692035124124}
+  - component: {fileID: 2193746385181144539}
   m_Layer: 0
   m_Name: tombstone1
   m_TagString: Untagged
@@ -4398,6 +5555,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.593, y: -0.11205436, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 16
@@ -4421,9 +5579,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4435,6 +5596,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4447,6 +5609,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2193746385181144539
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109607292997164738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.16907321
+  m_Height: 0.4199868
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 0, z: 0.016605234}
 --- !u!1 &8109608166282780744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4458,6 +5635,7 @@ GameObject:
   - component: {fileID: 8115208826290989584}
   - component: {fileID: 8141377188783132228}
   - component: {fileID: 8132450900784656620}
+  - component: {fileID: 6532623904615221598}
   m_Layer: 0
   m_Name: flower3 (2)
   m_TagString: Untagged
@@ -4475,6 +5653,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.5151892, y: -2.0910149, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 68
@@ -4498,9 +5677,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4512,6 +5694,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4524,6 +5707,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6532623904615221598
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109608166282780744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.004295357, z: 0.010438583}
 --- !u!1 &8109614179332839336
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,6 +5734,7 @@ GameObject:
   - component: {fileID: 8140270265281514596}
   - component: {fileID: 8132054240829512428}
   - component: {fileID: 8101388543626517054}
+  - component: {fileID: 2693491608332727077}
   m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
@@ -4553,6 +5752,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0.00000004214685, z: 0.00000004214685, w: 0.7071068}
   m_LocalPosition: {x: 1.4210987, y: -1.7332914, z: 0.041881204}
   m_LocalScale: {x: 0.059916634, y: 0.05602621, z: 0.06626696}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 37
@@ -4576,9 +5776,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4590,6 +5793,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4602,6 +5806,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &8101388543626517054
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4612,10 +5817,24 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &2693491608332727077
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109614179332839336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 5.000002
+  m_Height: 4.0972694e-13
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000017881393, z: 0.0000047683716}
 --- !u!1 &8109625022768387156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,6 +5846,7 @@ GameObject:
   - component: {fileID: 8106797921652664418}
   - component: {fileID: 8141347612091059118}
   - component: {fileID: 8131823863636287898}
+  - component: {fileID: 5429877112512561434}
   m_Layer: 0
   m_Name: grass (19)
   m_TagString: Untagged
@@ -4644,6 +5864,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.3531985, y: -0.9654912, z: 0.042752087}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 55
@@ -4667,9 +5888,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4681,6 +5905,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4693,6 +5918,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5429877112512561434
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109625022768387156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.0001568962, z: 0.016974416}
 --- !u!1 &8109627393603398664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +5944,7 @@ GameObject:
   - component: {fileID: 8106677202908914380}
   - component: {fileID: 8140523555523438706}
   - component: {fileID: 8132407707191077558}
+  - component: {fileID: 2519646547906614242}
   m_Layer: 0
   m_Name: flower2 (6)
   m_TagString: Untagged
@@ -4721,6 +5962,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.821, y: -0.951, z: 0.048}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 64
@@ -4744,9 +5986,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4758,6 +6003,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4770,6 +6016,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2519646547906614242
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109627393603398664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042954166, z: 0.010438598}
 --- !u!1 &8109637692591930074
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,6 +6042,7 @@ GameObject:
   - component: {fileID: 8114929879203901482}
   - component: {fileID: 8140657408239600254}
   - component: {fileID: 8132551568332993462}
+  - component: {fileID: 7870847274068483864}
   m_Layer: 0
   m_Name: fence (1)
   m_TagString: Untagged
@@ -4798,6 +6060,7 @@ Transform:
   m_LocalRotation: {x: -0.000000029802319, y: 0.00000005078016, z: 0.7102997, w: -0.7038995}
   m_LocalPosition: {x: 0.60819864, y: 0.95, z: 0.129}
   m_LocalScale: {x: 0.81227213, y: 0.5417978, z: 0.91786176}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 34
@@ -4821,9 +6084,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4835,6 +6101,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4847,6 +6114,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7870847274068483864
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109637692591930074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30828372
+  m_Height: 0.92960453
+  m_Direction: 1
+  m_Center: {x: 0.26296175, y: -0.055919185, z: 0.000000037252907}
 --- !u!1 &8109666296036900052
 GameObject:
   m_ObjectHideFlags: 0
@@ -4858,6 +6140,7 @@ GameObject:
   - component: {fileID: 8106694628880848432}
   - component: {fileID: 8139739985462077720}
   - component: {fileID: 8132783009054662322}
+  - component: {fileID: 8053028674060760170}
   m_Layer: 0
   m_Name: grass (34)
   m_TagString: Untagged
@@ -4875,6 +6158,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.9491987, y: -2.5144913, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 88
@@ -4898,9 +6182,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4912,6 +6199,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4924,6 +6212,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8053028674060760170
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109666296036900052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043399632, y: 0.00015665778, z: 0.016974421}
 --- !u!1 &8109674439591740372
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,6 +6238,7 @@ GameObject:
   - component: {fileID: 8114970956554271482}
   - component: {fileID: 8141358894349836624}
   - component: {fileID: 8132770406633356552}
+  - component: {fileID: 4364223019643918336}
   m_Layer: 0
   m_Name: grave2
   m_TagString: Untagged
@@ -4952,6 +6256,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.3161988, y: -0.97082776, z: 0.06919396}
   m_LocalScale: {x: 0.9538571, y: 0.9538576, z: 0.9538576}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 29
@@ -4975,9 +6280,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4989,6 +6297,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5001,6 +6310,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4364223019643918336
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109674439591740372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15503573
+  m_Height: 0.3545475
+  m_Direction: 1
+  m_Center: {x: -0.0002498105, y: -0.0810413, z: 0.12495166}
 --- !u!1 &8109706445939728182
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,6 +6336,7 @@ GameObject:
   - component: {fileID: 8114954815057670490}
   - component: {fileID: 8139837474225457024}
   - component: {fileID: 8131835809107277250}
+  - component: {fileID: 6296531246012248288}
   m_Layer: 0
   m_Name: humanchest (1)
   m_TagString: Untagged
@@ -5029,6 +6354,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.3876987, y: -2.3744915, z: 0.042211294}
   m_LocalScale: {x: 0.38926372, y: 0.38926396, z: 0.38926396}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 2
@@ -5052,9 +6378,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5066,6 +6395,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5078,6 +6408,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6296531246012248288
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109706445939728182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09981317
+  m_Height: 0.22343282
+  m_Direction: 1
+  m_Center: {x: -0.0006335787, y: -0.031303894, z: 0.03060374}
 --- !u!1 &8109720353462517722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,6 +6434,7 @@ GameObject:
   - component: {fileID: 8106902129551550884}
   - component: {fileID: 8140807478104712676}
   - component: {fileID: 8132467181869875084}
+  - component: {fileID: 7106368387225154029}
   m_Layer: 0
   m_Name: grass (22)
   m_TagString: Untagged
@@ -5106,6 +6452,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: -0.311, y: 0.518, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 58
@@ -5129,9 +6476,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5143,6 +6493,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5155,6 +6506,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7106368387225154029
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109720353462517722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004325062, y: 0.00015713462, z: 0.016974417}
 --- !u!1 &8109727255257984610
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,6 +6532,7 @@ GameObject:
   - component: {fileID: 8106704913764922880}
   - component: {fileID: 8140305755075670176}
   - component: {fileID: 8132645016287716302}
+  - component: {fileID: 7975252584497534717}
   m_Layer: 0
   m_Name: coffinroof
   m_TagString: Untagged
@@ -5183,6 +6550,7 @@ Transform:
   m_LocalRotation: {x: 0.05168646, y: 0.16523613, z: -0.12725006, w: 0.97664374}
   m_LocalPosition: {x: 1.5209627, y: -2.405069, z: 0.018957853}
   m_LocalScale: {x: 0.50959986, y: 0.50960004, z: 0.50960004}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 4
@@ -5206,9 +6574,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5220,6 +6591,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5232,6 +6604,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7975252584497534717
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109727255257984610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20294885
+  m_Height: 0.80313873
+  m_Direction: 1
+  m_Center: {x: -0.0000002496128, y: -0.0000011920929, z: 0.11557431}
 --- !u!1 &8109732087163144332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5243,6 +6630,7 @@ GameObject:
   - component: {fileID: 8115122911501014516}
   - component: {fileID: 8140287161438183512}
   - component: {fileID: 8132449187160683530}
+  - component: {fileID: 420129674881735474}
   m_Layer: 0
   m_Name: flower1 (4)
   m_TagString: Untagged
@@ -5260,6 +6648,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.9651985, y: -2.2914913, z: 0.047796965}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 76
@@ -5283,9 +6672,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5297,6 +6689,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5309,6 +6702,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &420129674881735474
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109732087163144332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.0042951186, z: 0.010438583}
 --- !u!1 &8109744419005318052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,6 +6728,7 @@ GameObject:
   - component: {fileID: 8106793628416666008}
   - component: {fileID: 8140380000633699704}
   - component: {fileID: 8132587046023043218}
+  - component: {fileID: 4630801019952947331}
   m_Layer: 0
   m_Name: grass (32)
   m_TagString: Untagged
@@ -5337,6 +6746,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.2621989, y: -2.5504913, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 86
@@ -5360,9 +6770,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5374,6 +6787,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5386,6 +6800,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4630801019952947331
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109744419005318052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.00015665778, z: 0.01697442}
 --- !u!1 &8109767409682975898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,6 +6826,7 @@ GameObject:
   - component: {fileID: 8106853094230672674}
   - component: {fileID: 8141315304009029174}
   - component: {fileID: 8133497327822965236}
+  - component: {fileID: 3096676628230809399}
   m_Layer: 0
   m_Name: grave1
   m_TagString: Untagged
@@ -5414,6 +6844,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.7701988, y: -0.8998989, z: 0.0691939}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 30
@@ -5437,9 +6868,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5451,6 +6885,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5463,6 +6898,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3096676628230809399
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109767409682975898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.16907321
+  m_Height: 0.4199868
+  m_Direction: 1
+  m_Center: {x: -0.0008132532, y: -0.15150934, z: 0.12564574}
 --- !u!1 &8109772873053984622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,6 +6924,7 @@ GameObject:
   - component: {fileID: 8106755954313538918}
   - component: {fileID: 8139909614849021624}
   - component: {fileID: 8132447064952869904}
+  - component: {fileID: 5714731142723624334}
   m_Layer: 0
   m_Name: buried grave2 (2)
   m_TagString: Untagged
@@ -5491,6 +6942,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 0.8078356, y: -1.8366914, z: 0.038881183}
   m_LocalScale: {x: 1.7669065, y: 1.3922005, z: 0.099502556}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 14
@@ -5514,9 +6966,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5528,6 +6983,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5540,6 +6996,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5714731142723624334
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109772873053984622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.0002512969, y: 0.10596403, z: 0.087000415}
 --- !u!1 &8109781506707924958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,6 +7022,7 @@ GameObject:
   - component: {fileID: 8106670462990676556}
   - component: {fileID: 8139715304148877174}
   - component: {fileID: 8131884458405530896}
+  - component: {fileID: 7994920193678987407}
   m_Layer: 0
   m_Name: grass (18)
   m_TagString: Untagged
@@ -5568,6 +7040,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.466, y: -0.982, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 54
@@ -5591,9 +7064,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5605,6 +7081,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5617,6 +7094,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7994920193678987407
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109781506707924958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043340027, y: 0.0001568366, z: 0.016974421}
 --- !u!1 &8109790987855634410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,6 +7120,7 @@ GameObject:
   - component: {fileID: 8115317314508663876}
   - component: {fileID: 8140515865201700616}
   - component: {fileID: 8132771901488989464}
+  - component: {fileID: 7376754331900461248}
   m_Layer: 0
   m_Name: flower1
   m_TagString: Untagged
@@ -5645,6 +7138,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.2013392, y: -2.1030028, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 19
@@ -5668,9 +7162,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5682,6 +7179,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5694,6 +7192,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7376754331900461248
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109790987855634410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030179317, y: 0.004295357, z: 0.01043859}
 --- !u!1 &8109812043498443738
 GameObject:
   m_ObjectHideFlags: 0
@@ -5705,6 +7218,7 @@ GameObject:
   - component: {fileID: 8106910431658134586}
   - component: {fileID: 8140362278338309556}
   - component: {fileID: 8132573968542200646}
+  - component: {fileID: 2981271229183318838}
   m_Layer: 0
   m_Name: grass (27)
   m_TagString: Untagged
@@ -5722,6 +7236,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.6721988, y: -2.5134914, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 81
@@ -5745,9 +7260,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5759,6 +7277,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5771,6 +7290,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2981271229183318838
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109812043498443738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043414533, y: 0.00015653858, z: 0.016974425}
 --- !u!1 &8109817615492609686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,6 +7316,7 @@ GameObject:
   - component: {fileID: 8114927381365318980}
   - component: {fileID: 8140410492024753060}
   - component: {fileID: 8132740594159049334}
+  - component: {fileID: 1925375305721076596}
   m_Layer: 0
   m_Name: flower2
   m_TagString: Untagged
@@ -5799,6 +7334,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.7373614, y: -2.0024703, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 21
@@ -5822,9 +7358,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5836,6 +7375,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5848,6 +7388,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1925375305721076596
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109817615492609686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178423, y: 0.0042949994, z: 0.01043859}
 --- !u!1 &8109820566682624936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5859,6 +7414,7 @@ GameObject:
   - component: {fileID: 8106628422114638794}
   - component: {fileID: 8140372101231667298}
   - component: {fileID: 8132914689942144114}
+  - component: {fileID: 3803816914101489211}
   m_Layer: 0
   m_Name: flower2 (1)
   m_TagString: Untagged
@@ -5876,6 +7432,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.0976167, y: -1.8574691, z: 0.047797084}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 18
@@ -5899,9 +7456,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5913,6 +7473,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5925,6 +7486,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3803816914101489211
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109820566682624936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.003018051, y: 0.0042949994, z: 0.01043859}
 --- !u!1 &8109821031518465402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5936,6 +7512,7 @@ GameObject:
   - component: {fileID: 8115111910160294292}
   - component: {fileID: 8140485673669281956}
   - component: {fileID: 8131816292740230990}
+  - component: {fileID: 5354542929370883444}
   m_Layer: 0
   m_Name: sjull (1)
   m_TagString: Untagged
@@ -5953,6 +7530,7 @@ Transform:
   m_LocalRotation: {x: 0.29427385, y: 0.00000005696542, z: 0.000000017540088, w: -0.95572114}
   m_LocalPosition: {x: 1.3996224, y: -2.3124914, z: 0.03721142}
   m_LocalScale: {x: 0.6096836, y: 0.6096838, z: 0.6096838}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 3
@@ -5976,9 +7554,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5990,6 +7571,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6002,6 +7584,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5354542929370883444
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109821031518465402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06358232
+  m_Height: 0.11926064
+  m_Direction: 1
+  m_Center: {x: -0.0000003017485, y: -0.0039896, z: 0.034452196}
 --- !u!1 &8109821518464079820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6013,6 +7610,7 @@ GameObject:
   - component: {fileID: 8106741869889822794}
   - component: {fileID: 8141371416237323648}
   - component: {fileID: 8131963566124737554}
+  - component: {fileID: 776416057776656501}
   m_Layer: 0
   m_Name: buried grave2 (6)
   m_TagString: Untagged
@@ -6030,6 +7628,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.00000005960465, z: 0.000000029802322, w: 1}
   m_LocalPosition: {x: 0.030198809, y: -0.28549102, z: 0.038881272}
   m_LocalScale: {x: 1.7669065, y: 1.3922005, z: 0.099502556}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 70
@@ -6053,9 +7652,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6067,6 +7669,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6079,6 +7682,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &776416057776656501
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109821518464079820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.114906475
+  m_Height: 0.4629795
+  m_Direction: 1
+  m_Center: {x: 0.0002512969, y: 0.105964296, z: 0.08700043}
 --- !u!1 &8109826585323601982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6090,6 +7708,7 @@ GameObject:
   - component: {fileID: 8106722045660686306}
   - component: {fileID: 8139970205315982858}
   - component: {fileID: 8132097278186190340}
+  - component: {fileID: 7104891750829117587}
   m_Layer: 0
   m_Name: grass (20)
   m_TagString: Untagged
@@ -6107,6 +7726,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.591199, y: -1.1434911, z: 0.042752266}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 56
@@ -6130,9 +7750,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6144,6 +7767,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6156,6 +7780,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7104891750829117587
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109826585323601982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.000043429434, y: 0.0001568366, z: 0.01697442}
 --- !u!1 &8109839508152353284
 GameObject:
   m_ObjectHideFlags: 0
@@ -6167,6 +7806,7 @@ GameObject:
   - component: {fileID: 8106539871846402084}
   - component: {fileID: 8140289955633922012}
   - component: {fileID: 8132641139201801150}
+  - component: {fileID: 1897442976519548353}
   m_Layer: 0
   m_Name: shovel
   m_TagString: Untagged
@@ -6184,6 +7824,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.4241986, y: -1.6369481, z: 0.08351016}
   m_LocalScale: {x: 1, y: 1, z: 0.762217}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 27
@@ -6207,9 +7848,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6221,6 +7865,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6233,6 +7878,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1897442976519548353
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109839508152353284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.353504
+  m_Height: 0.05077088
+  m_Direction: 1
+  m_Center: {x: -0.00000005960464, y: -0.0015988734, z: 0.2970734}
 --- !u!1 &8109843281821569366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,6 +7904,7 @@ GameObject:
   - component: {fileID: 8107002485768554558}
   - component: {fileID: 8140758393880146642}
   - component: {fileID: 8132663865130942952}
+  - component: {fileID: 683601467346512215}
   m_Layer: 0
   m_Name: grass (17)
   m_TagString: Untagged
@@ -6261,6 +7922,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.10219859, y: -1.9094913, z: 0.04275179}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 53
@@ -6284,9 +7946,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6298,6 +7963,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6310,6 +7976,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &683601467346512215
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109843281821569366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.00015671739, z: 0.016974412}
 --- !u!1 &8109847337970566870
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,6 +8002,7 @@ GameObject:
   - component: {fileID: 8115199696861243396}
   - component: {fileID: 8140330923860105824}
   - component: {fileID: 8132552539158376288}
+  - component: {fileID: 5954756481659765520}
   m_Layer: 0
   m_Name: flower2 (4)
   m_TagString: Untagged
@@ -6338,6 +8020,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.43419886, y: -2.0624914, z: 0.047796965}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 62
@@ -6361,9 +8044,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6375,6 +8061,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6387,6 +8074,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5954756481659765520
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109847337970566870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.0042949994, z: 0.01043859}
 --- !u!1 &8110283946154086566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6398,6 +8100,7 @@ GameObject:
   - component: {fileID: 8106773597165790268}
   - component: {fileID: 8141365590635344186}
   - component: {fileID: 8133401049584522256}
+  - component: {fileID: 2285331366063192980}
   m_Layer: 0
   m_Name: flower2 (5)
   m_TagString: Untagged
@@ -6415,6 +8118,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.5321989, y: -1.3914914, z: 0.047797203}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 63
@@ -6438,9 +8142,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6452,6 +8159,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6464,6 +8172,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2285331366063192980
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110283946154086566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030178125, y: 0.004295357, z: 0.01043859}
 --- !u!1 &8110286482665872952
 GameObject:
   m_ObjectHideFlags: 0
@@ -6475,6 +8198,7 @@ GameObject:
   - component: {fileID: 8106657219834621384}
   - component: {fileID: 8139753986843322416}
   - component: {fileID: 8131822004036373380}
+  - component: {fileID: 2011847216329527147}
   m_Layer: 0
   m_Name: flower2 (2)
   m_TagString: Untagged
@@ -6492,6 +8216,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.9242, y: -1.8335, z: 0.0503}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 60
@@ -6515,9 +8240,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6529,6 +8257,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6541,6 +8270,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2011847216329527147
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110286482665872952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030179317, y: 0.004295357, z: 0.010438583}
 --- !u!1 &8110291616118591026
 GameObject:
   m_ObjectHideFlags: 0
@@ -6552,6 +8296,7 @@ GameObject:
   - component: {fileID: 8115307810456517496}
   - component: {fileID: 8139740254870925048}
   - component: {fileID: 8132896398581612900}
+  - component: {fileID: 2383797104870744315}
   m_Layer: 0
   m_Name: flower2 (7)
   m_TagString: Untagged
@@ -6569,6 +8314,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 2.1161985, y: -0.937, z: 0.048}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 65
@@ -6592,9 +8338,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6606,6 +8355,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6618,6 +8368,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2383797104870744315
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110291616118591026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030179317, y: 0.0042954762, z: 0.010438583}
 --- !u!1 &8110310712358391584
 GameObject:
   m_ObjectHideFlags: 0
@@ -6629,6 +8394,7 @@ GameObject:
   - component: {fileID: 8106614879816036610}
   - component: {fileID: 8141254528936130072}
   - component: {fileID: 8132844036519992444}
+  - component: {fileID: 6738184550947746819}
   m_Layer: 0
   m_Name: grass (23)
   m_TagString: Untagged
@@ -6646,6 +8412,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.3901987, y: -0.22949126, z: 0.042752042}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 59
@@ -6669,9 +8436,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6683,6 +8453,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6695,6 +8466,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6738184550947746819
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110310712358391584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004348904, y: 0.0001568962, z: 0.016974417}
 --- !u!1 &8110324901758186514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6706,6 +8492,7 @@ GameObject:
   - component: {fileID: 8106740794258739204}
   - component: {fileID: 8140639408458236514}
   - component: {fileID: 8133363840067711416}
+  - component: {fileID: 6842333846454963608}
   m_Layer: 0
   m_Name: tombstonesign
   m_TagString: Untagged
@@ -6723,6 +8510,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0.274, y: -2.028, z: 0.012}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 10
@@ -6746,9 +8534,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6760,6 +8551,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6772,6 +8564,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6842333846454963608
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110324901758186514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07927888
+  m_Height: 0.123688586
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: -0.00000029802322, z: 0.07104981}
 --- !u!1 &8110366699998302054
 GameObject:
   m_ObjectHideFlags: 0
@@ -6783,6 +8590,7 @@ GameObject:
   - component: {fileID: 8106969529079572220}
   - component: {fileID: 8139750396290816944}
   - component: {fileID: 8132172176740353176}
+  - component: {fileID: 3445068706815930631}
   m_Layer: 0
   m_Name: flower1 (1)
   m_TagString: Untagged
@@ -6800,6 +8608,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.0311985, y: -1.5614913, z: 0.047797084}
   m_LocalScale: {x: 0.49369308, y: 0.49369332, z: 0.49369332}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 73
@@ -6823,9 +8632,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6837,6 +8649,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6849,6 +8662,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3445068706815930631
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110366699998302054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09876419
+  m_Height: 0.19645141
+  m_Direction: 1
+  m_Center: {x: 0.0030179317, y: 0.0042952676, z: 0.010438575}
 --- !u!1 &8110390838346271662
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,6 +8688,7 @@ GameObject:
   - component: {fileID: 8115109947877259064}
   - component: {fileID: 8139734610585979120}
   - component: {fileID: 8131916964177909892}
+  - component: {fileID: 5202694235251230004}
   m_Layer: 0
   m_Name: fence (2)
   m_TagString: Untagged
@@ -6877,6 +8706,7 @@ Transform:
   m_LocalRotation: {x: -0.000000059604638, y: 3.2681047e-10, z: 0.99993986, w: -0.01096594}
   m_LocalPosition: {x: 1.6621985, y: -1.6944914, z: 0.13888133}
   m_LocalScale: {x: 0.8122717, y: 0.54179776, z: 0.9178614}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 35
@@ -6900,9 +8730,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6914,6 +8747,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6926,6 +8760,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5202694235251230004
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110390838346271662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30828357
+  m_Height: 0.92960423
+  m_Direction: 1
+  m_Center: {x: 0.26296183, y: -0.055918332, z: 0.000000029802319}
 --- !u!1 &8110391743702097924
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,6 +8786,7 @@ GameObject:
   - component: {fileID: 8106542177194914784}
   - component: {fileID: 8139764687401912500}
   - component: {fileID: 8132009436897141430}
+  - component: {fileID: 4161575048499149476}
   m_Layer: 0
   m_Name: brokentombstone4
   m_TagString: Untagged
@@ -6954,6 +8804,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.23953669, z: -0, w: 0.9708873}
   m_LocalPosition: {x: 2.654, y: 0.018, z: -0.056}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 15
@@ -6977,9 +8828,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6991,6 +8845,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7003,6 +8858,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4161575048499149476
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110391743702097924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2140065
+  m_Height: 0.099992946
+  m_Direction: 1
+  m_Center: {x: 0.004889999, y: -0.002266044, z: 0.2534007}
 --- !u!1 &8110412593700962428
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,6 +8884,7 @@ GameObject:
   - component: {fileID: 8115154610034374600}
   - component: {fileID: 8140489512870935396}
   - component: {fileID: 8132898483115709402}
+  - component: {fileID: 8612714493382621864}
   m_Layer: 0
   m_Name: grass (14)
   m_TagString: Untagged
@@ -7031,6 +8902,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 1.0881987, y: -1.3354913, z: 0.042752028}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8115279502581197146}
   m_RootOrder: 50
@@ -7054,9 +8926,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7068,6 +8943,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7080,3 +8956,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8612714493382621864
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110412593700962428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.045502633
+  m_Height: 0.091017805
+  m_Direction: 1
+  m_Center: {x: 0.00004336983, y: 0.0001567919, z: 0.016974417}

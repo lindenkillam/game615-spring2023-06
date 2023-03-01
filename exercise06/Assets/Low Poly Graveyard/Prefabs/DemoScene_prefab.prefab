@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4186573202570006103
 Transform:
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 7200514022054429994}
   m_Layer: 0
   m_Name: grass (24)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 7255219285141719032}
   m_Layer: 0
   m_Name: grass (9)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 5239583617258189443}
   m_Layer: 0
   m_Name: brokentombstone4 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 616552358350167542}
   m_Layer: 0
   m_Name: grass (31)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 2128494345829121262}
   m_Layer: 0
   m_Name: grass (13)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 4275448781206835818}
   m_Layer: 0
   m_Name: bone1
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 8763289926774472846}
   m_Layer: 0
   m_Name: flower1 (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 1767069023730053068}
   m_Layer: 0
   m_Name: grave6
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 118318329490645623}
   m_Layer: 0
   m_Name: grass (7)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 4695520695761870039}
   m_Layer: 0
   m_Name: flower3 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 4391429439413647767}
   m_Layer: 0
   m_Name: fence (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1205,7 +1205,7 @@ GameObject:
   - component: {fileID: 8504635197189532126}
   m_Layer: 0
   m_Name: flower1 (6)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 3065999842538733178}
   m_Layer: 0
   m_Name: grass (4)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 5322621191996322164}
   m_Layer: 0
   m_Name: fence
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1499,7 +1499,7 @@ GameObject:
   - component: {fileID: 8909822737669726322}
   m_Layer: 0
   m_Name: bone2 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 7999231743523855189}
   m_Layer: 0
   m_Name: buried grave2 (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   - component: {fileID: 7218055896398178203}
   m_Layer: 0
   m_Name: grass (28)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1793,7 +1793,7 @@ GameObject:
   - component: {fileID: 1228439415406706161}
   m_Layer: 0
   m_Name: grass (8)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1891,7 +1891,7 @@ GameObject:
   - component: {fileID: 5302237119610849419}
   m_Layer: 0
   m_Name: BigTomb
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 1582079000743430050}
   m_Layer: 0
   m_Name: grass (30)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2087,7 +2087,7 @@ GameObject:
   - component: {fileID: 6289359811225263989}
   m_Layer: 0
   m_Name: brokentombstone2
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,7 +2185,7 @@ GameObject:
   - component: {fileID: 6839121636456517383}
   m_Layer: 0
   m_Name: grave5
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2283,7 +2283,7 @@ GameObject:
   - component: {fileID: 8242027570716197423}
   m_Layer: 0
   m_Name: grass (21)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2381,7 +2381,7 @@ GameObject:
   - component: {fileID: 8163198485030187560}
   m_Layer: 0
   m_Name: grass (10)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2479,7 +2479,7 @@ GameObject:
   - component: {fileID: 4083566814042771850}
   m_Layer: 0
   m_Name: buried grave2 (4)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2577,7 +2577,7 @@ GameObject:
   - component: {fileID: 1620094691816319828}
   m_Layer: 0
   m_Name: grass (16)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2675,7 +2675,7 @@ GameObject:
   - component: {fileID: 5899276367353486945}
   m_Layer: 0
   m_Name: humanchest
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 2267911450033184274}
   m_Layer: 0
   m_Name: grass (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 5745168681425753320}
   m_Layer: 0
   m_Name: bone1 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2969,7 +2969,7 @@ GameObject:
   - component: {fileID: 8683221698674544127}
   m_Layer: 0
   m_Name: flower1 (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3067,7 +3067,7 @@ GameObject:
   - component: {fileID: 6497669194391031632}
   m_Layer: 0
   m_Name: flower2 (8)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3165,7 +3165,7 @@ GameObject:
   - component: {fileID: 836191466323745210}
   m_Layer: 0
   m_Name: grass (6)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 18349627382825987}
   m_Layer: 0
   m_Name: brokentombstone3
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3361,7 +3361,7 @@ GameObject:
   - component: {fileID: 1372356832398438265}
   m_Layer: 0
   m_Name: grass (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,7 +3459,7 @@ GameObject:
   - component: {fileID: 1116409253393357525}
   m_Layer: 0
   m_Name: sjull
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3557,7 +3557,7 @@ GameObject:
   - component: {fileID: 4558350110894625119}
   m_Layer: 0
   m_Name: coffin
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3655,7 +3655,7 @@ GameObject:
   - component: {fileID: 6235525482143371295}
   m_Layer: 0
   m_Name: flower3
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3753,7 +3753,7 @@ GameObject:
   - component: {fileID: 206324115564879982}
   m_Layer: 0
   m_Name: grass (25)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3851,7 +3851,7 @@ GameObject:
   - component: {fileID: 2081542968599810316}
   m_Layer: 0
   m_Name: grass (29)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3949,7 +3949,7 @@ GameObject:
   - component: {fileID: 7085999924126275630}
   m_Layer: 0
   m_Name: grass (26)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4047,7 +4047,7 @@ GameObject:
   - component: {fileID: 3707851014106056172}
   m_Layer: 0
   m_Name: buried grave2
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4145,7 +4145,7 @@ GameObject:
   - component: {fileID: 1310977919968838273}
   m_Layer: 0
   m_Name: grass (11)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4364,7 +4364,7 @@ GameObject:
   - component: {fileID: 5459572828928945173}
   m_Layer: 0
   m_Name: grass (15)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4462,7 +4462,7 @@ GameObject:
   - component: {fileID: 350957922893485355}
   m_Layer: 0
   m_Name: flower2 (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4560,7 +4560,7 @@ GameObject:
   - component: {fileID: 7970668507018732255}
   m_Layer: 0
   m_Name: flower1 (5)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4658,7 +4658,7 @@ GameObject:
   - component: {fileID: 5865218809188430616}
   m_Layer: 0
   m_Name: grass (12)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4756,7 +4756,7 @@ GameObject:
   - component: {fileID: 7454246662019457058}
   m_Layer: 0
   m_Name: grass (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4854,7 +4854,7 @@ GameObject:
   - component: {fileID: 8849301181951292448}
   m_Layer: 0
   m_Name: buried grave2 (5)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4952,7 +4952,7 @@ GameObject:
   - component: {fileID: 230796793810889109}
   m_Layer: 0
   m_Name: grave4
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 1885079552619424915}
   m_Layer: 0
   m_Name: grass (5)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5148,7 +5148,7 @@ GameObject:
   - component: {fileID: 8445903023749290878}
   m_Layer: 0
   m_Name: brokentombstone1
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5246,7 +5246,7 @@ GameObject:
   - component: {fileID: 7880574953709047315}
   m_Layer: 0
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5344,7 +5344,7 @@ GameObject:
   - component: {fileID: 6972322501084385308}
   m_Layer: 0
   m_Name: grass (33)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5442,7 +5442,7 @@ GameObject:
   - component: {fileID: 6785792142584839628}
   m_Layer: 0
   m_Name: bone2
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5540,7 +5540,7 @@ GameObject:
   - component: {fileID: 2193746385181144539}
   m_Layer: 0
   m_Name: tombstone1
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5638,7 +5638,7 @@ GameObject:
   - component: {fileID: 6532623904615221598}
   m_Layer: 0
   m_Name: flower3 (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5737,7 +5737,7 @@ GameObject:
   - component: {fileID: 2693491608332727077}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5849,7 +5849,7 @@ GameObject:
   - component: {fileID: 5429877112512561434}
   m_Layer: 0
   m_Name: grass (19)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5947,7 +5947,7 @@ GameObject:
   - component: {fileID: 2519646547906614242}
   m_Layer: 0
   m_Name: flower2 (6)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6045,7 +6045,7 @@ GameObject:
   - component: {fileID: 7870847274068483864}
   m_Layer: 0
   m_Name: fence (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6143,7 +6143,7 @@ GameObject:
   - component: {fileID: 8053028674060760170}
   m_Layer: 0
   m_Name: grass (34)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6241,7 +6241,7 @@ GameObject:
   - component: {fileID: 4364223019643918336}
   m_Layer: 0
   m_Name: grave2
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6339,7 +6339,7 @@ GameObject:
   - component: {fileID: 6296531246012248288}
   m_Layer: 0
   m_Name: humanchest (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6437,7 +6437,7 @@ GameObject:
   - component: {fileID: 7106368387225154029}
   m_Layer: 0
   m_Name: grass (22)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6535,7 +6535,7 @@ GameObject:
   - component: {fileID: 7975252584497534717}
   m_Layer: 0
   m_Name: coffinroof
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6633,7 +6633,7 @@ GameObject:
   - component: {fileID: 420129674881735474}
   m_Layer: 0
   m_Name: flower1 (4)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6731,7 +6731,7 @@ GameObject:
   - component: {fileID: 4630801019952947331}
   m_Layer: 0
   m_Name: grass (32)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6829,7 +6829,7 @@ GameObject:
   - component: {fileID: 3096676628230809399}
   m_Layer: 0
   m_Name: grave1
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6927,7 +6927,7 @@ GameObject:
   - component: {fileID: 5714731142723624334}
   m_Layer: 0
   m_Name: buried grave2 (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7025,7 +7025,7 @@ GameObject:
   - component: {fileID: 7994920193678987407}
   m_Layer: 0
   m_Name: grass (18)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7123,7 +7123,7 @@ GameObject:
   - component: {fileID: 7376754331900461248}
   m_Layer: 0
   m_Name: flower1
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7221,7 +7221,7 @@ GameObject:
   - component: {fileID: 2981271229183318838}
   m_Layer: 0
   m_Name: grass (27)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7319,7 +7319,7 @@ GameObject:
   - component: {fileID: 1925375305721076596}
   m_Layer: 0
   m_Name: flower2
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7417,7 +7417,7 @@ GameObject:
   - component: {fileID: 3803816914101489211}
   m_Layer: 0
   m_Name: flower2 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7515,7 +7515,7 @@ GameObject:
   - component: {fileID: 5354542929370883444}
   m_Layer: 0
   m_Name: sjull (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7613,7 +7613,7 @@ GameObject:
   - component: {fileID: 776416057776656501}
   m_Layer: 0
   m_Name: buried grave2 (6)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7711,7 +7711,7 @@ GameObject:
   - component: {fileID: 7104891750829117587}
   m_Layer: 0
   m_Name: grass (20)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7809,7 +7809,7 @@ GameObject:
   - component: {fileID: 1897442976519548353}
   m_Layer: 0
   m_Name: shovel
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7907,7 +7907,7 @@ GameObject:
   - component: {fileID: 683601467346512215}
   m_Layer: 0
   m_Name: grass (17)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8005,7 +8005,7 @@ GameObject:
   - component: {fileID: 5954756481659765520}
   m_Layer: 0
   m_Name: flower2 (4)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8103,7 +8103,7 @@ GameObject:
   - component: {fileID: 2285331366063192980}
   m_Layer: 0
   m_Name: flower2 (5)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8201,7 +8201,7 @@ GameObject:
   - component: {fileID: 2011847216329527147}
   m_Layer: 0
   m_Name: flower2 (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8299,7 +8299,7 @@ GameObject:
   - component: {fileID: 2383797104870744315}
   m_Layer: 0
   m_Name: flower2 (7)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8397,7 +8397,7 @@ GameObject:
   - component: {fileID: 6738184550947746819}
   m_Layer: 0
   m_Name: grass (23)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8495,7 +8495,7 @@ GameObject:
   - component: {fileID: 6842333846454963608}
   m_Layer: 0
   m_Name: tombstonesign
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8593,7 +8593,7 @@ GameObject:
   - component: {fileID: 3445068706815930631}
   m_Layer: 0
   m_Name: flower1 (1)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8691,7 +8691,7 @@ GameObject:
   - component: {fileID: 5202694235251230004}
   m_Layer: 0
   m_Name: fence (2)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8789,7 +8789,7 @@ GameObject:
   - component: {fileID: 4161575048499149476}
   m_Layer: 0
   m_Name: brokentombstone4
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8887,7 +8887,7 @@ GameObject:
   - component: {fileID: 8612714493382621864}
   m_Layer: 0
   m_Name: grass (14)
-  m_TagString: Untagged
+  m_TagString: notWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
